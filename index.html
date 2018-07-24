@@ -9,24 +9,17 @@
 </head>
 <body>
   <header><h1>sticky notes</h1></header>
-  <div class="container">
-    <div class="note1 sticky">test1</div>
-    <div class="note2 sticky">test2</div>
-    <div class="note3 sticky">test3</div>
-    <div class="note4 sticky">test4</div>
-    <div class="note5 sticky">test5</div>
-    <div class="note6 sticky">test6</div>
-    <div class="note7 sticky">test7</div>
-    <div class="note8 sticky">test8</div>
+  <div class="container" id="wall">
+    <div class="note1 sticky"><textarea>Enter text here</textarea></div>
   </div>
   <footer>
-    <p><strong><-</strong></p>
-    <form>
+    <p id='left'><strong><-</strong></p>
+    <div class="change">
       <input type="number" value="1" class="page">
       <br>
-      <input type="submit" value="jump to page" class="jump">
-    </form>
-    <p><strong>-></strong></p>
+      <button class="jump">jump to page</button>
+    </div>
+    <p id='right'><strong>-></strong></p>
   </footer>
 </body>
 <script src="notes.js"></script>
