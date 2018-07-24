@@ -1,0 +1,110 @@
+* {
+  margin: auto;
+  padding: 0;
+}
+
+body {
+  font-family: 'Gaegu', cursive;
+  background: #efefef;
+}
+
+header {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.container {
+  width: 85%;
+  height: 75vh;
+  background: #dedede;
+  margin: 20px 7.5%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border-radius: 5px;
+}
+
+/* sticky notes */
+
+.sticky {
+  margin: 14px;
+  background: #d5fffb;
+  border-radius: 2px;
+  padding: 7px;
+}
+
+.note1 {
+  grid-row: 1 2;
+  grid-column: 1 2;
+}
+
+.note2 {
+  grid-row: 1 2;
+  grid-column: 2 3;
+}
+
+.note3 {
+  grid-row: 1 2;
+  grid-column: 3 4;
+}
+
+.note4 {
+  grid-row: 1 2;
+  grid-column: 4 5;
+}
+
+.note5 {
+  grid-row: 2 3;
+  grid-column: 1 2;
+}
+
+.note6 {
+  grid-row: 2 3;
+  grid-column: 2 3;
+}
+
+.note7 {
+  grid-row: 2 3;
+  grid-column: 3 4;
+}
+
+.note8 {
+  grid-row: 2 3;
+  grid-column: 4 5;
+}
+
+
+/* footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  min-width: 200px;
+}
+
+p {
+  margin: 20px;
+
+}
+
+.page {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.jump {
+  margin-bottom: 10px;
+  padding: 10px;
+  background: white;
+  border: #dedede 1px solid;
+  border-radius: 2px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+strong {
+  font-size: 3rem;
+}
