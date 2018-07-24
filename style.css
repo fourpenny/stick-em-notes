@@ -19,6 +19,9 @@ header {
   background: #dedede;
   margin: 20px 7.5%;
   border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 /* sticky notes */
@@ -28,22 +31,52 @@ header {
   background: #d5fffb;
   border-radius: 2px;
   padding: 10px;
-  position: relative;
   width: 275px;
   height: 275px;
-  float: left;
 }
 
 textarea {
   width: 250px;
   height: 250px;
   margin-left: 12.5px;
+  float: left;
 }
 
 .delete {
   float: right;
   margin-top: 0;
   font-size: 1.2rem;
+  margin-left: 10px;
+}
+
+.note1 {
+  grid-column: 1 2;
+  grid-row: 1 2;
+}
+
+.note2 {
+  grid-column: 2 3;
+  grid-row: 1 2;
+}
+
+.note3 {
+  grid-column: 3 4;
+  grid-row: 1 2;
+}
+
+.note4 {
+  grid-column: 1 2;
+  grid-row: 2 3;
+}
+
+.note5 {
+  grid-column: 2 3;
+  grid-row: 2 3;
+}
+
+.note6 {
+  grid-column: 3 4;
+  grid-row: 2 3;
 }
 
 /* footer */

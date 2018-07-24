@@ -1,7 +1,8 @@
 let canvas = document.getElementById('wall');
 canvas.addEventListener('click', addNote)
 let noteCount = 1;
-let pageNumber = 1;
+let pageNumber = 1
+let classCount = 2;
 
 function init() {
   let pageSelector = [
@@ -31,7 +32,12 @@ function addNote(event) {
       noteCount++
       console.log(noteCount);
       let note = document.createElement('div');
-      note.className = 'sticky';
+      note.className = 'sticky ' + 'note' + classCount;
+      if (!(classCount == 6)) {
+        classCount++
+      } else {
+        classCount = 1;
+      }
       note.setAttribute('id', noteCount)
       let deleteNote = document.createElement('p');
       let x = document.createTextNode('X');
